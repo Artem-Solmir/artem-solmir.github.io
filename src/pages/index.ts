@@ -1,0 +1,2 @@
+// Pages - application pages
+export {};

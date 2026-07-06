@@ -1,18 +1,20 @@
 import React from 'react';
-import { Counter, useCounter } from '../../features/counter';
+import { Menu } from '../../widgets';
+import './RootLayout.css';
+
+const MENU_LINKS = [
+  { label: 'Главная', href: '/' },
+  { label: 'Крестики-Нолики', href: '/tictactoe' },
+  { label: 'О себе', href: '/about' },
+  { label: 'Проекты', href: '/projects' },
+  { label: 'Блог', href: '/blog' },
+  { label: 'Контакты', href: '/contacts' },
+];
 
 export const RootLayout: React.FC = () => {
-  const { count, increment, decrement } = useCounter(0);
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>🎨 FSD Architecture</h1>
-        <p>Feature-Sliced Design Ready!</p>
-      </header>
-      <main>
-        <Counter count={count} onIncrement={increment} onDecrement={decrement} />
-      </main>
+    <div className="home-container">
+      <Menu links={MENU_LINKS} variant="vertical" />
     </div>
   );
 };

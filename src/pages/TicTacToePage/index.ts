@@ -1,2 +1,1 @@
-// Pages - application pages
 export { TicTacToePage } from './TicTacToePage';

@@ -1,2 +1,2 @@
 // Features - user-facing features
-export {};
+export { TicTacToe } from './tictactoe';

@@ -1,2 +1,2 @@
 // Widgets - complex standalone UI units
-export {};
+export { Menu } from './Menu';
